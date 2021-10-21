@@ -1,0 +1,111 @@
+body {
+  background-image: url('high-resolution-new-york-skyline-sunset-l.jpg');
+  font-family: "Klyakson", sans-serif;
+}
+
+aside {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgb(255, 255, 255);
+  opacity: 70%;
+}
+
+aside > h1
+{
+  padding: 10px;
+  font-size: 26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  float: left;
+}
+
+nav {
+  position: fixed;
+  width: calc(100% - 250px);
+  height: 125px;
+  top: 0;
+  right: 0;
+  background: #c7c7c7;
+}
+
+nav > ul {
+  padding: 10px;
+  font-size: 26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav > ul a {
+  text-decoration: none;
+  color: inherit;
+}
+
+nav > ul li {
+  padding: 5px;
+  margin-right: 20px;
+  list-style-type: none;
+}
+
+nav > ul li:hover {
+  border-radius: 5px;
+  background: white;
+}
+
+main {
+  padding-left: 250px;
+  padding-top: 20px;
+  width: 100%;
+  height: 20vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer {
+  position: fixed;
+  width: calc(100% - 250px);
+  height: 125px;
+  bottom: 0;
+  right: 0;
+  background: #c7c7c7;
+}
+
+footer > h1 {
+  padding: 10px;
+  font-size: 26px;
+  display: flex;
+  float: right;
+}
+
+article {
+  margin-top: 110px;
+  margin-right: 400px;
+  padding: 20px;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  background-color: cyan;
+  -webkit-box-shadow: 10px 10px 10px black;
+          box-shadow: 10px 10px 10px black;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+
+article h1 {
+  font-size: 72px;
+}
+
+article p {
+  font-size: 24px;
+}
