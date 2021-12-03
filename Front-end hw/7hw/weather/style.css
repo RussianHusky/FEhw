@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Mukta&family=Russo+One&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{
+    overflow: hidden;
+}
+.weather{
+    background-repeat: round;
+    border: 2px;
+    border-radius: 4px;
+    box-shadow: 0 0 15px 5px rgb(255, 179, 37);
+    background-image: url(assets/glass.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Mukta', sans-serif;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+}
+.main h1{
+    color: rgb(255, 255, 255);
+}
+.main span{
+    color: rgb(201, 0, 0);
+}
+
+.currentW{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.nameofcity{
+    font-family: 'Mukta', sans-serif;
+    display: flex;
+    align-items: center;
+    }
+
+.nameofcity h2{
+    color: rgb(255, 255, 255);                 
+}
+.nameofcity p{
+    display: flex;
+    font-size: 30px;
+    justify-content: center;
+    color: rgb(0, 255, 55);                 
+}
+img{
+max-width: 13vw;
+}
+
+.today{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.today h3{
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+}
+.today p{
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+}
+.label7days{
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+.week{
+    background-image: unset;
+    background: rgb(255,255,255);             
+    background: linear-gradient(114deg, rgba(255, 255, 255, 0.3) 0%, rgba(84,226,255,0.3) 100%);                              
+    margin-left: 3%;
+    margin-right: 3%;
+    border-radius: 10px;   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.icon{
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.day1 .icon{
+    width: 64px;
+    height:64px;
+    background-image: url(assets/sunstyle.png);
+    background-size: contain;
+}
+.day2 .icon{
+    width: 64px;
+    height:64px;
+    background-image: url(assets/clouds.png);
+    background-size: contain;
+} 
+.day3 .icon{
+    width: 64px;
+    height:64px;
+    background-image: url(assets/clouds.png);
+    background-size: contain;
+} 
+.day4 .icon{
+    width: 64px;
+    height:64px;
+    background-image: url(assets/clouds.png);
+    background-size: contain;
+} 
+.day5 .icon{
+    width: 64px;
+    height:64px;
+    background-image: url(assets/sunstyle.png);
+    background-size: contain;
+} 
+.day6 .icon{
+    width: 64px;
+    height:64px;
+    background-image: url(assets/clouds.png);
+    background-size: contain;
+} 
+.day7 .icon{
+    width: 64px;
+    height:64px;
+    background-image: url(assets/sunstyle.png);
+    background-size: contain;
+}
+
+@media (max-width:700px) and (min-width: 480px) {
+    .currentW{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .week{
+        display: block;
+    }
+    .day1,.day2,.day3,.day4,.day5,.day6,.day7{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .dayname{
+        display: flex;
+        align-self: center;
+        justify-self: center;
+    }
+    .icon{
+        display: flex;
+        align-self: center;
+        justify-self: center;
+    }
+    .day{
+        display: flex;
+        align-self: center;
+        justify-self: center;
+    }
+    .night{
+        display: flex;
+        align-self: center;
+        justify-self: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .dayname{
+        display: flex;
+        align-self: center;
+        justify-self: center;
+    }
+    .icon{
+        display: flex;
+        align-self: center;
+        justify-self: center;
+    }
+    .day{
+        display: flex;
+        align-self: center;
+        justify-self: center;
+    }
+    .night{
+        display: flex;
+        align-self: center;
+        justify-self: center;
+    }
+    .currentW{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+     .week{                        
+        display: block;
+        font-size: 80%;
+    }
+    .day1,.day2,.day3,.day4,.day5,.day6,.day7{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}

@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Russo+One&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Dancing Script', cursive;
+}
+
+.title{
+    text-align: center;
+    background: black;
+}
+
+h1{
+    justify-items: center;
+    justify-self: center;
+    justify-content: center;
+    border: 1px;
+    color: rgb(228, 228, 228);
+}
+.columns{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: rgb(228, 228, 228);
+    grid-row-gap: 0px;
+}
+
+.columns > img{
+    flex: 25%;
+    max-width: 25%;
+    grid-row-gap: 0px;
+    width: 100%;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+@media (max-width:810px){
+    .columns > img{
+    flex: 50%;
+    max-width: 50%;
+    }
+}
+
+@media (max-width: 480px) {
+    .columns > img{
+    flex: 100%;
+    max-width: 100%;
+    }
+}
