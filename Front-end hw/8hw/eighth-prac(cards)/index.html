@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.card').mouseover(function(){
+                $('.card:not(:hover)').addClass('blured');
+                $(this).css('transform', 'scale(1.2)');
+            })
+            .mouseout(function(){
+                $('.card:not(:hover)').removeClass('blured');
+                $(this).css('transform', 'scale(1)');
+            })            
+        })
+    </script>
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="card">
+            <div class="circle">
+                <h1>01</h1>
+            </div>
+            <div class="content">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque repudiandae totam dignissimos libero deleniti quas suscipit voluptatum corrupti debitis id accusamus, mollitia repellat natus voluptatem praesentium vitae blanditiis, nemo quis!</p>
+                <a href="">Подробнее</a>
+            </div>
+        </div>        
+
+        <div class="card">
+            <div class="circle">
+                <h1>02</h1>
+            </div>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique impedit laudantium corrupti temporibus in dolorum natus qui voluptate omnis placeat a, nihil, officia quo earum officiis. Consequuntur amet nesciunt iusto.</p>
+                <a href="">Подробнее</a>
+            </div>
+        </div>        
+
+        <div class="card">
+            <div class="circle">
+                <h1>03</h1>
+            </div>
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, ipsum labore, debitis error enim at porro fuga voluptatum quia sapiente nostrum aspernatur similique distinctio maxime placeat. Harum molestias ab in.</p>
+                <a href="">Подробнее</a>
+            </div>
+        </div>        
+    </div>
+    
+</body>
+</html>
