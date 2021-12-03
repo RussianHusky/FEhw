@@ -1,0 +1,32 @@
+.flex-container {
+
+    display: inline-flex;
+
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #bbdefb;
+    height: 100%;
+    padding: 15px;
+    gap: 5px;
+    border: 3px solid #bb00ff;
+    border-radius: 5px;
+}
+@media only screen and (max-width: 600px){
+    .flex-container {
+
+        display: inline-flex;
+
+        flex-direction: column;
+
+        background-color: #bbdefb;
+        height: 100%;
+        padding: 15px;
+        gap: 5px;
+
+    }
+
+    .flex-container > div{
+        border-radius: 5px;
+        padding: 8px;
+    }
+}

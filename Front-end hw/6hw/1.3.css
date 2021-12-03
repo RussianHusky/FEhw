@@ -1,0 +1,93 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "HEADER HEADER HEADER HEADER HEADER HEADER HEADER"
+    "SIDEBAR NAVIGATION NAVIGATION NAVIGATION NAVIGATION NAVIGATION ADDS"
+    "SIDEBAR MAIN MAIN MAIN MAIN MAIN ADDS"
+    "SIDEBAR MAIN MAIN MAIN MAIN MAIN ADDS"
+    "FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER";
+}
+
+.HEADER { grid-area: HEADER;
+    border: 3px solid #d900ff;}
+
+.NAVIGATION { grid-area: NAVIGATION;
+    border: 3px solid #b300ff;}
+
+.FOOTER { grid-area: FOOTER;
+    border: 3px solid #bb00ff;}
+
+.MAIN { grid-area: MAIN;
+    border: 3px solid #bb00ff;}
+
+.SIDEBAR { grid-area: SIDEBAR;
+    border: 3px solid #bb00ff;}
+
+.ADDS { grid-area: ADDS;
+    border: 3px solid #bb00ff;}
+
+/*Телефон*/
+@media only screen and (max-width: 900px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+    "HEADER HEADER HEADER"
+    "NAVIGATION NAVIGATION NAVIGATION"
+    "MAIN MAIN MAIN"
+    "MAIN MAIN MAIN"
+    "SIDEBAR SIDEBAR SIDEBAR"
+    "ADDS ADDS ADDS"
+    "FOOTER FOOTER FOOTER";
+    }
+
+    .HEADER { grid-area: HEADER; }
+
+    .NAVIGATION { grid-area: NAVIGATION; }
+
+    .MAIN { grid-area: MAIN; }
+
+    .SIDEBAR { grid-area: SIDEBAR; }
+
+    .ADDS { grid-area: ADDS; }
+
+    .FOOTER { grid-area: FOOTER; }
+
+}
+
+/*IPAD*/
+@media only screen and (max-width: 1200px){
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+    "HEADER HEADER HEADER"
+    "NAVIGATION NAVIGATION NAVIGATION"
+    "SIDEBAR MAIN MAIN"
+    "SIDEBAR MAIN MAIN"
+    "ADDS FOOTER FOOTER";
+    }
+
+    .HEADER { grid-area: HEADER; }
+
+    .NAVIGATION { grid-area: NAVIGATION; }
+
+    .SIDEBAR { grid-area: SIDEBAR; }
+
+    .MAIN { grid-area: MAIN; }
+
+    .ADDS { grid-area: ADDS; }
+
+    .FOOTER { grid-area: FOOTER; }
+
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="2.3.css">
+</head>
+<body>
+<div class="flex-container1">
+    <div class="flex-container3">
+        <div class="logo">Logo</div>
+        <div class="break"></div>
+        <a class="item" href="home.html">Home</a>
+        <a class="item" href="about.html">About</a>
+        <a class="item" href="services.html">Services</a>
+        <a class="item" href="contacts.html">Contacts</a>
+        <span id="btn" class="button material-icons">menu</span>
+    </div>
+
+    <div id="menu" class="menu">
+        <a class="menu-item" href="home.html">Home</a>
+        <a class="menu-item" href="about.html">About</a>
+        <a class="menu-item" href="services.html">Services</a>
+        <a class="menu-item" href="contacts.html">Contacts</a>
+    </div>
+</div>
+
+<div id="content" class="content"></div>
+
+<script type="text/javascript">
+    let button = document.getElementById("btn");
+    let menu = document.getElementById("menu");
+    let isMenuOpen = false;
+
+    // За такое грех не поставить 5
+    window.addEventListener("resize", () => {
+        if (window.innerWidth >= 600) {
+            menu.style.display = "none";
+            isMenuOpen = false;
+        }
+    })
+
+    button.addEventListener("click", () => {
+        if (isMenuOpen) {
+            menu.style.display = "none";
+        } else {
+            menu.style.display = "flex";
+        }
+
+        isMenuOpen = !isMenuOpen;
+    })
+</script>
+</body>
+</html>
