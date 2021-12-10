@@ -46,3 +46,9 @@ body {
   height: 5rem;
   width: auto;
 }
+
+@media (max-width: 400px){
+  .counter-container{
+    flex-direction: column;
+  }
+}

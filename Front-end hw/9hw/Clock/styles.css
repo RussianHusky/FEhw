@@ -1,0 +1,23 @@
+body{
+  background-color: #ffffff;
+}
+.time{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+#date{
+    flex: 2;
+}
+.clockpage{
+  font-size: 175px;
+  width: 900px;
+  margin: 200px;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+#dayOfWeek{
+  display: block;
+  font-size: 18px;
+}

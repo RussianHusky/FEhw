@@ -1,85 +1,121 @@
-.rating {
-    float:left;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
 }
 
-/* :not(:checked) is a filter, so that browsers that don’t support :checked don’t 
-   follow these rules. Every browser that supports :checked also supports :not(), so
-   it doesn’t make the test unnecessarily selective */
-.rating:not(:checked) > input {
-    position:absolute;
-    top:-9999px;
-    clip:rect(0,0,0,0);
+body {
+    background: var(--primary-color);
+    font-family: 'Montserrat';
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.rating:not(:checked) > label {
-    float:right;
-    width:1em;
-    padding:0 .1em;
-    overflow:hidden;
-    white-space:nowrap;
-    cursor:pointer;
-    font-size:200%;
-    line-height:1.2;
-    color:#ddd;
-    text-shadow:1px 1px #bbb, 2px 2px #666, .1em .1em .2em rgba(0,0,0,.5);
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 1170px;
+    position: relative;
 }
 
-.rating:not(:checked) > label:before {
-    content: '★ ';
+.mark {
+    background: var(--secondary-color);
+    margin-bottom: 200px;
+    width: 350px;
+    height: 350px;
+    padding: 20px 30px;
+    border-radius: 10px;    
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+}
+.mark.invisible {
+    height: auto;
+    background: var(--secondary-color);
+    margin-bottom: 200px;
+    width: 350px;
+    padding: 20px 30px;
+    border-radius: 10px;    
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.mark.invisible h1 {
+    position: absolute;
+    top: -100px;
+}
+.mark.invisible .comment{
+    position: absolute;
+    top: -100px;
+}
+.mark.invisible .send-btn {
+    position: absolute;
+    top: -100px;
 }
 
-.rating > input:checked ~ label {
-    color: #f70;
-    text-shadow:1px 1px #c60, 2px 2px #940, .1em .1em .2em rgba(0,0,0,.5);
+.stars {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.stars .star {
+    cursor: pointer;
+    transition: 0.2s linear;
+}
+.stars .star.hovered {
+    color: orange;
+    filter: drop-shadow(0 0 10px rgba(255, 51, 0, 0.3));
+}
+.stars .star.saved {
+    color: orange;
+    filter: drop-shadow(0 0 10px rgba(255, 51, 0, 0.3));
 }
 
-.rating:not(:checked) > label:hover,
-.rating:not(:checked) > label:hover ~ label {
-    color: gold;
-    text-shadow:1px 1px goldenrod, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);
+.mark h1 {
+    color: orange;
+    font-size: 24px;
 }
 
-.rating > input:checked + label:hover,
-.rating > input:checked + label:hover ~ label,
-.rating > input:checked ~ label:hover,
-.rating > input:checked ~ label:hover ~ label,
-.rating > label:hover ~ input:checked ~ label {
-    color: #ea0;
-    text-shadow:1px 1px goldenrod, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);
+.mark .comment {
+    width: 100%;
+    height: 90px;
+    border-radius: 10px;
+    background: rgb(34,34,34);
 }
 
-.rating > label:active {
-    position:relative;
-    top:2px;
-    left:2px;
+.mark .comment input {
+    outline: none;
+    border: none;
+    background: none;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    color: white;
+    position: relative;   
 }
 
-/* end of Lea's code */
 
-/*
- * Clearfix from html5 boilerplate
- */
+.mark .send-btn {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    color: white;
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    background: rgb(34,34,34);
 
-.clearfix:before,
-.clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
-}
-
-.clearfix:after {
-    clear: both;
-}
-
-/*
- * For IE 6/7 only
- * Include this rule to trigger hasLayout and contain floats.
- */
-
-.clearfix {
-    *zoom: 1;
-}
-
-/* my stuff */
-#status, button {
-    margin: 20px 0;
 }
