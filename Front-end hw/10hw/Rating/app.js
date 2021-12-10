@@ -9,7 +9,7 @@ $(document).ready(function(){
     $('.star')
     .on('mouseenter',function(){  
         for (let i = 0; i <= $(starsArr).index(this); i++){
-            $(starsArr[i]).addClass('hovered');
+            $(starsAqrr[i]).addClass('hovered');
         }
     })
     .on('mouseleave', function(){
