@@ -1,0 +1,77 @@
+body {
+    background:radial-gradient(farthest-corner circle at center , blue, rgb(255, 208, 0));
+    margin: 0 auto;
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+.wrap {  /* консоль */
+    width: 300px;
+    margin: auto;
+}
+.item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    
+}
+.text{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    background-color:cornsilk;
+    border: 2px solid cornsilk;
+    border-radius: 20px;
+    width: 70%;
+}
+#input {
+    width: 70%;
+}
+#btn {
+    width: 20%;
+}
+ul { /* итог */
+    list-style: none;
+    margin: 0;
+    padding: 0;}
+
+#result {
+    margin-bottom: 50px;
+}
+
+.but {
+    background: rgb(255, 255, 255);
+    border: none;
+    color: rgb(0, 0, 0);   /* цвет cлов кнопки delet*/
+    margin-Left: 15px;
+    padding: 10px;
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+}
+.delet {
+    padding: 4px 8px;
+    background: #63ff34;
+    border: 1px solid rgb(77, 252, 71);/*блок delet*/
+    border-radius: 3px;
+    box-shadow: 0 0 5px 5px darkred;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 5;
+    width: 100%;
+    text-transform: capitalize;
+}
+.form{
+    background-color: rgb(0, 118, 253);
+    display: block;
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border: 5px solid rgb(165, 75, 75);
+    border-radius: 10%;
+}

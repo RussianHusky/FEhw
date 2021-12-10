@@ -1,0 +1,35 @@
+body{
+  background-color: #404040;
+}
+.time{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+#date{
+    flex: 2;
+    color: rgb(204, 0, 0);
+    text-shadow: 2px 3px 12px rgb(204, 0, 255);
+}
+.clockpage{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    max-width: 500px;
+    min-width: 100px;
+    height: 10%;
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+    text-shadow: 2px 3px 8px rgb(0, 60, 255);
+    font-size: 32px;
+    padding: 10px;
+    font-weight: bold;
+    border-top: 10px solid #69005b;
+    margin-top: 100px;
+    background: linear-gradient(45deg, #000000, #001279);
+    color: rgba(255, 245, 238, 0.267);
+}
+#dayOfWeek{
+  display: block;
+  font-size: 18px;
+}
